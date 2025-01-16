@@ -20,7 +20,7 @@ This system is build upon 36547 reviews from Amazon with labeled sentiments ("po
 
 You can use the following steps to train and test the sentiment classifier as well as evaluate the results.
 
-## Download the repository and two ways to use the system
+## Download the repository and two ways to implement the classifier
 
 1.   Open [cl_sentiment_classifier.py](cl_sentiment_classifier.py) in your running environment.
 
