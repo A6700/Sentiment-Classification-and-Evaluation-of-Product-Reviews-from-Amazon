@@ -10,7 +10,7 @@ This system is build upon 36547 reviews from Amazon with labeled sentiments ("po
 
 2.   Set up the baseline and build the classifier.
       *   The baseline model: tokenized only by spaces.
-      *   Model A-E: apply the adjusted data preprocessing methods.
+      *   Model A-D: apply the adjusted data preprocessing methods.
 
 3.   Evaluate the classifier.
       *   Compute the accuracy, precision, and recall value.
