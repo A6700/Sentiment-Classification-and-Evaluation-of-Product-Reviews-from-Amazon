@@ -1,5 +1,5 @@
 # Sentiment-Classification-and-Evaluation-of-Product-Reviews-from-Amazon
-This system is build upon 36547 reviews from Amazon with labeled sentiments ("positive" for 4 or 5 stars and "negative" for 1 or 2 stars) and aims to conduct sentiment classification of the reviews. The procedures consist of data preprocessing (including tokenization and an optional lemmaization section of irregular verbs to experiment with), building the baseline model and the classifier, and evaluations of the classifier.
+This system is build upon 36547 reviews from Amazon with labeled sentiments (*positive* for 4 or 5 stars and *negative* for 1 or 2 stars) and aims to conduct sentiment classification of the reviews. The procedures consist of data preprocessing (including tokenization and an optional lemmaization section of irregular verbs to experiment with), building the baseline model and the classifier, and evaluations of the classifier.
 
 # Content
 1.   Data preprocessing.
@@ -34,9 +34,9 @@ You can use the following steps to train and test the sentiment classifier as we
 
 ## Instructions for building the classifier for later experiments
 
-1.   Run the *Model A - E and Data Preprocessing* code block for data preprocessing.
+1.   Run the *Model A - D and Data Preprocessing* code block for data preprocessing.
 
-     *   To experiment with the lemmatization of irregular verbs, you may first run the *Optional: experiment with the lemmatization of irregular verbs* code block and then uncomment the following lines in the *Model A - E and Data Preprocessing* code block:
+     *   To experiment with the lemmatization of irregular verbs, you may first run the *Optional: experiment with the lemmatization of irregular verbs* code block and then uncomment the following lines in the *Model A - D and Data Preprocessing* code block:
        
          ```
          for s, t in enumerate(past_tense):
@@ -46,7 +46,7 @@ You can use the following steps to train and test the sentiment classifier as we
              if tokenized_reviews[i][j] == t:
                  tokenized_reviews[i][j] = verbs[s]
          ```
-     *   Then you are free to run the *Model A - E and Data Preprocessing* code block. (If you are skipping the lemmatization experiment, you can run the *Model A - E and Data Preprocessing* code block directly.)
+     *   Then you are free to run the *Model A - D and Data Preprocessing* code block. (If you are skipping the lemmatization experiment, you can run the *Model A - D and Data Preprocessing* code block directly.)
        
 2.   Run the *Build a Logistic Regression Model for Binary Classification of Sentiments* code block to build your classifier.
   
@@ -54,7 +54,7 @@ You can use the following steps to train and test the sentiment classifier as we
 
 ## Changing the parameters
 
-1.   In *The Baseline Model and Data Preprocessing* and *Model A - E and Data Preprocessing*, find the following lines to change the vocabulary size of your `type_list`:
+1.   In *The Baseline Model and Data Preprocessing* and *Model A - D and Data Preprocessing*, find the following lines to change the vocabulary size of your `type_list`:
 
      ```
      type_list = so[0:5000]
